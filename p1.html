@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Payment Page 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="p1.css">
+        
+    </head>
+
+    <body background="C:\Users\separ\Downloads\MP1\images\black.jpg">
+
+        <div class="container">
+            <form class="needs-validation text-white" novalidate>
+                <h1>RECORDING ONLY</h1>
+                    <hr width="460px">
+
+<!-- RECORDING OPTIONS AREA -->
+                <h5>Choose track/tracks to record:</h5>
+                    <div class="checkbox">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Vocal Track</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Guitar Track</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Bass Guitar Track</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Keyboard/Piano Track</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Drum Track</label>
+                        </div>
+                    </div>
+                    <br>
+
+                    <label for="exampleDataList" class="form-label"><h5>Choose type of music:</h5></label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Choose Style/Genre">
+                            <datalist id="datalistOptions">
+                                <option value="Rock/Alternative">
+                                <option value="Pop/Alternative">
+                                <option value="Progressive Rock">                 
+                                <option value="Heavy/Metal">
+                                <option value="Glam/Alternative">
+                                <option value="Jazz/Blues">
+                            </datalist>
+                    <br>
+
+<!-- NOTES SECTION AREA -->
+                    <div class="mb-3">             
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"><h5>Note specific instructions:</h5></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here..."></textarea>
+                        </div>   
+
+<!-- CONFIRM ORDER BUTTON -->
+       
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-black" id="exampleModalToggleLabel">Order placed sucessfully!</h5>
+                                </div>
+                                <div class="modal-body text-black">
+                                Please click confirm if you would like to start processing your order now.
+                                </div>
+                                <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">EDIT DETAILS</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">CONFIRM ORDER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <center><a class="btn btn-outline-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">SUBMIT ORDER</a></center>
+               
+            </form>
+        </div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>      
+    </body>
+</html>

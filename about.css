@@ -1,0 +1,62 @@
+/*HEADER SECTION*/
+.headerimg{
+    text-align: center;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+img{
+    border: 5px solid white;
+}
+
+/*NAVIGATION BAR*/
+.container-fluid{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 1315px;
+    text-align: center;
+}
+
+/*SECTION 1 AREA*/
+.col-8{
+    margin-left: 12px;
+    margin-right: 5px;
+    margin-top: 2px;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 500px;
+    width: 1300px;
+}
+
+/*FOOTER AREA SECTION*/
+footer{
+    margin-top: 5px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 1305px;
+}
+
+/*ADDED FILES SECTION*/
+
+
+/*STYLING RELATED CODES*/
+h1{
+    text-align: left;
+    padding-top: 5px;
+}
+
+h5{
+    padding-top: 3px;
+}
+
+p{
+    text-align: justify;
+    text-align: left;
+}
+
+.p1{
+    text-indent: 50px;
+}
